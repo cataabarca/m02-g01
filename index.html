@@ -1,80 +1,126 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<!-- Nombre en pestaña  -->
-	<title>DTS</title>
-	<!-- Importar hoja de estilo  -->
-	<link rel="stylesheet" href="style.css">
-	<!-- Importar tipografías-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina web</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 
 </head>
+<body>
+  <div class="wrapper">
+    <header>
+      <nav class="navbar">
+        <div class="brand">
+          <h2>C<span>R</span></h2>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#a">Sobre mi</a></li>
+          <li><a href="#b">Galería</a></li>
+          <li><a href="#c">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="info-content">
+        <h1><span>Catalina</span> Raby</h1>
+      </div>
+      <img src="imagenes/yo1.png" alt="">
+    </main>
+  </div>
+    <div class="about">
+      <img src="imagenes/yo3.jpg" alt="">
+      <div class="about-info">
+        <section id="a">
+        <h2>Sobre mi</h2>
+        <div class="divisor1"></div>
+        <p>Mi nombre es Catalina Raby Palacios y tengo 20 años. Actualmente estoy estudiando Diseño integral en la Pontificia Universidad Católica de Chile.</p>
+        <p>Desde hace varios años, he desarrollado un profundo interés por todo lo relacionado con el arte. Se ha convertido en uno de mis principales hobbies y me ha brindado una manera única de explorar mi creatividad y expresarme.</p>
+        <p>Aquí encontrarán una selección de mis trabajos artísticos. Cada pieza ha sido creada con pasión y dedicación. Espero que estas obras les transmitan emociones y los inspiren de la misma manera en que lo hacen conmigo.</p>
 
-<header> <!-- En el header va el encabezado de nuestra pagina-->
+      </div>
+    </div>
+    <div class="portfolio">
+      <div class="portfolio-heading">
+         <section id="b">
+        <h2>Galería</h2>
+        <div class="divisor2"></div>
+        <p>Apretar imagen para mayor información</p>
+      </div>
 
+<div class="onClickTextOverImage"
+     style="background-image:url(imagenes/cuadro1.jpg)">
+  <a href="#flor"></a>
+  <div id="flor">
+    "Renacer" 30x30 cm
+  </div>
+</div>
 
-	<div id="introduccion">
-		<h1>Título: Ayudantía 6</h1>
-		<h2>Subtítulo</h2>
-		<img src="img/imagen01.jpg">
-		<p>Párrafo para describir a mi gato</p>
-	</div>
-
-
-</header>
-
-
-<body> <!-- En el body va el cuerpo de nuestra pagina -->
-
-
-	<div id="contenedor">
-        
-		<h2>A Sub titulo para este proyecto</h2>
-				<img src="img/imagen02.jpg">
-		<p>-Otro párrafo cortito...</p>
-			
-		<h3>B Sub titulo otro contenido</h3>
-		<p>Un párrafo final tipo conclusión</p>
-
-		<h2>C Sub titulo vis 1</h2>
-		<img src="img/vis01.jpg">
-		<p>Un párrafo explicativo</p>
-
-		<h2>D Sub titulo vis 2</h3>
-		<object data="img/vis02.svg" type="image/svg+xml"></object>
-		<p>Un párrafo explicativo</p>
-
-	</div><!-- cierre div contenedor -->
-
-
-	<div id="desarrollo">
-		otro div
-	</div>
-
-
-	<div id="conclusion">
-		otro div mas...
-	</div>
-
-	</div>
-
-</body>
-
-
-<footer>   <!-- En el footer va el pie de pagina de nuestra web -->
-
-	<div class="info-footer">
-		<ul class="lista-footer">
-	    	<li><a href="/">Twitter</a></li>
-	    	<li><a href="/">Instagram</a></li>
-	    	<li><a href="/">Facebook</a></li>
-		</ul>
-	</div>
-
-</footer>
+<div class="onClickTextOverImage"
+     style="background-image:url(imagenes/cuadro2.jpg)">
+  <a href="#persona"></a>
+  <div id="persona">
+    "El alma en el gris" 50x50 cm
+  </div>
+</div>
 
 
-</html>
+<div class="onClickTextOverImage"
+     style="background-image:url(imagenes/cuadro3.jpg)">
+  <a href="#montaña"></a>
+  <div id="montaña">
+    "La vida en colores" 50x50 cm
+  </div>
+</div>
+
+<div class="onClickTextOverImage"
+     style="background-image:url(imagenes/cuadro4.jpg)">
+  <a href="#mar"></a>
+  <div id="mar">
+   "Entre la paz y la calma"
+   35x25 cm
+  </div>
+</div>
+
+<div class="onClickTextOverImage"
+     style="background-image:url(imagenes/cuadro5.jpg)">
+  <a href="#paisaje"></a>
+  <div id="paisaje">
+    "El valle de las flores" 18x24 cm
+  </div>
+</div>
+
+<div class="onClickTextOverImage"
+     style="background-image:url(imagenes/cuadro6.jpg)">
+  <a href="#mandala"></a>
+  <div id="mandala">
+    "Absorto" Diametro: 40 cm
+  </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,0L720,288L1440,32L1440,320L720,320L0,320Z"></path></svg>
+</div>
+
+    <footer class="footer"> 
+      <div class="footer-content">
+        <h2>Catalina Raby</h2>
+        <section id="c">
+        <h5>Galería de arte</h5>
+      </div>
+      <div class="sotial-networks">
+        <a href="https://instagram.com/raby.design?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/rabyc/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.pinterest.cl/cataraby/"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </footer>
+  </body>
+
+
+
+<!--codigo coloeres: https://coolors.co/8b575c-f4a8a4-258ea6-549f93-9faf90-->
+<!--Codigo texto sobre imagen: https://www.youtube.com/watch?v=3OWa0pQWxAQ-->
+<!--codigo hipervinculo https://www.w3schools.com/html/default.asp-->
+<!--codigo inspiracion pagina web: https://www.youtube.com/watch?v=LM_rRRSNq20-->
+<!--codigo para quitar fondo: https://www.remove.bg/es/upload-->
+<!--codigo SVG:ttps://getwaves.io/-->
