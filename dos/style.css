@@ -1,283 +1,280 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
- }
-
-body 
-{
-  font-family: 'Montserrat', sans-serif;
+*{
+    box-sizing: border-box;
 }
 
-.wrapper 
-{
-  width: 100vw;
-  height: 100vh;
-  background-color: #DFDCD2;
-  color: #fff;
+html{
+    scroll-behavior: smooth;
 }
 
-.navbar 
-{
-  display: flex;
-  justify-content: space-between;
-  padding: 2em;
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
 
-
-.menu 
-{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #2C5530;
 }
 
-.menu  li 
-{
-  list-style: none;
+button:hover{
+    background-color: #DDDBCB;
 }
 
-.menu a 
-{
-  color: black;
-  text-decoration: none;
-  padding: 10px 20px; 
-  font-size: 25px;
+.container{
+    max-width: 1400px;
+    margin: auto;
 }
 
-.menu li:hover a
-{
-  background-color: #A6C3C7;
-  color: #8B575C;
+.color-acento{ color:#2C5530; }
+
+
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.menu .active 
-{
-  color: #FC9CB4;
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
-.menu li a:hover 
-{
-  color: #565454;
-}
-.onClickTextOverImage
-{
-  width:550px;
-  height:550px;
-  background-size:cover;
-  display:inline-block;
-  margin-top: 40px;
-  border-radius:10px;
-  box-shadow:0 0 16px rgba(0,0,0,0.5);
-  position:relative;
-  margin-left: 110PX;
-  margin-bottom: 50px;
-}
-
-.onClickTextOverImage *
-{
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  z-index:2;
-}
-
-.onClickTextOverImage div
-{
-  z-index:1;
-  color:#fff;
-  text-align:center;
-  padding:8px;
-  padding-top:35%;
-  background-color:rgba(0,0,0,0.5);
-  border-radius:10px;
-  opacity:0;
-  transition:.3s;
-  font-size: 30px;
-}
-
-.onClickTextOverImage div:target
-{
-  opacity:1;  
-  padding-top:40%;
-  z-index:3;
-}
-
-
-.cover {
-  display: flex;
-  background-color: #9DB2B5;
-}
-
-.cover img {
-  width: 20000px;
-  height: 261.6px;
-  background-color: #9DB2B5 ;
-}
-
-.container {
-
-  padding-top: 50px;
-  background-color: #9DB2B5;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: bold;
-  transform: skew(-10deg);
-  color: black;
-   margin-left: 50px;
-}
-
-.paragraph {
-  font-size: 18px;
-  transform: skew(-10deg);
-  padding-left: 20px;
-  color: black;
-  margin-bottom: 20px;
-  text-align: justify;
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.paragraph1 {
-  font-size: 18px;
-  transform: skew(-10deg);
-  padding-left: 20px;
-  color: black;
-  margin-bottom: 20px;
-  margin-top: 60px;
-  text-align: justify;
-   margin-left: 40px;
-   margin-right: 40px; }
-
-.image {
-  width: 500px;
-  height: auto;
-  margin-left: 470px;
-
-}
-
-.autores {
-  display: flex;
-  justify-content: center;
-  background-color: #9DB2B5;
-}
-
-.autor-autores {
-  text-align: center;
-  margin: 70px;
-  margin-right: 100px;
-}
-
-.autor {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-.nombre {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-
-.cover2 {
-  display: flex;
-  background-color: #C5BCBC ;
-}
-
-.cover2 img {
-  width: 22000px;
-  height: 261.6px;
-
-}
-
-.parte2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #E5ECD4;
-}
-
-.left-images,
-.right-images {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.center-content {
-  text-align: center;
-}
-
-.proyecto {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 10px;
-
-}
-
-.center-content h1 {
-  font-size: 35px;
-  margin-bottom: 10px;
-  color: black;
-margin-bottom: 25px;
-}
-
-.center-content p {
-  font-size: 20px;
-  color: black;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.left-images {
-  margin-left: 40px;
-}
-
-.right-images {
-  margin-right: 40px;
-}
-
-.autor3 {
-  display: flex;
-  justify-content: center;
-  height: 40vh;
-  background-color:#E5ECD4 ;
-}
-
-.author-info {
-  text-align: center;
-  color: black;
-}
-
-.author-image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-
-}
-
-.author-name {
-  font-size: 24px;}
-
-
-
-.vinculo { background-color: #DFDCD2;}
-
-  .vinculo h1,h2, p {
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
     color: black;
-    padding: 15px;
-justify-content: center;
-text-justify: center;
+}
 
-  }
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-proya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#autores{
+    background-color: #739E82;
+    color: white;
+    text-align: center;
+}
+
+#autores .container{
+    padding: 150px 12px;
+}
+
+#autores h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#autores p{
+    display: none;
+}
+
+#autores .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin-left: 400px;
+    margin-right: 400px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+
+    ,url("img/autor3.jpeg");
+
+
+}
+
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-proya .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-proya .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-proya h2{
+        margin-top: 0px;
+    }
+
+    #somos-proya .img-container{
+        background-image: url("img/collage.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 800px;
+        width: 400px; 
+    }
+
+    #autores .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #autores p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #autores h2{
+        font-size: 4em;
+    }
+
+    #autores h3{
+        margin-top: 0;
+    }
+
+    #autores .carta{
+        padding: 50px;
+        
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("img/autor3.jpeg");
+
+    }
+
+ 
+  
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
