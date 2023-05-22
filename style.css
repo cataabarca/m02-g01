@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
  }
 
 body 
@@ -15,17 +14,21 @@ body
 {
   width: 100vw;
   height: 100vh;
-  background-color: #8B575C;
-  color: #fff;
+  background-color: #AEC2B6;
+  color: #C5BCBC;
 }
 
 .navbar 
 {
   display: flex;
   justify-content: space-between;
-  padding: 2em;
 }
 
+.navbar img 
+{
+  width: 50vw;
+  height: 80vh;
+}
 
 .brand span 
 {
@@ -46,7 +49,7 @@ body
 
 .menu a 
 {
-  color: #fff;
+  color: #C5BCBC;
   text-decoration: none;
   padding: 10px 20px; 
 }
@@ -81,6 +84,7 @@ body
 h1 
 {
   font-size: 4em;
+  color: black;
 }
 
 .info-content span 
@@ -89,13 +93,7 @@ h1
 }
 
 
-.main img 
-{
-  border:  7px solid #FC9CB4;
-  width: 400px;
-  height: 520px;
-  z-index: 1;
-}
+
 
 .about 
 {
@@ -105,29 +103,29 @@ h1
   align-items: center;
 }
 
-.about img 
-{
-  width: 100%;
-  grid-column: 1/5;
-}
 
 .about-info 
 {
-  grid-column: 5/10;
-  padding: 3em;
+  padding: 2em;
 }
 
+.about-info img
+{
+  width:1420px;
+  height: 150px;
+
+}
 .about-info h2 
 {
   font-size: 2em;
-  color: #8B575C;
+  color: #000000;
 }
 
 .divisor1 
 {
   height: 4px;
   width: 50px;
-  background-color: #FC9CB4;
+  background-color: #9DB2B5;
   margin-top: 5px;
   margin-bottom: 2em;
 }
@@ -136,7 +134,7 @@ h1
 {
   height: 4px;
   width: 50px;
-  background-color: #FC9CB4;
+  background-color: #9DB2B5;
   margin-top: 5px;
   margin-bottom: 2em;
   margin-left: 20px;
@@ -152,25 +150,13 @@ h1
 .contact-section 
 {
   width: 100vw;
-  background-color: #8B575C;
+  background-color: #E3F2C1;
   color: #fff;
 }
 
-
-.portfolio-heading h2,
-.contact-heading h2 
+.portfolio h2
 {
-  font-size: 2.5em;
-  color: #fff;
-  margin-left: 20PX;
-}
-
-.portfolio-heading p,
-.contact-heading p
-{   font-size: 1em;
-  color: #fff;
-  margin-left: 20PX;
-  margin-top: -10px;
+  color: black;
 }
 
 .cuadros img
@@ -184,15 +170,15 @@ h1
 
 .onClickTextOverImage
 {
-  width:300px;
-  height:300px;
+  width:900px;
+  height:650px;
   background-size:cover;
   display:inline-block;
-  margin:40px;
-  border-radius:10px;
+  margin:20px;
+  border-radius:5px;
   box-shadow:0 0 16px rgba(0,0,0,0.5);
   position:relative;
-  margin-left: 110PX;
+  margin-left: 40PX;
 }
 
 .onClickTextOverImage *
@@ -210,10 +196,11 @@ h1
   z-index:1;
   color:#fff;
   text-align:center;
+  font-size: 25px;
   padding:8px;
   padding-top:35%;
   background-color:rgba(0,0,0,0.5);
-  border-radius:10px;
+  border-radius:5px;
   opacity:0;
   transition:.3s;
 }
@@ -234,7 +221,7 @@ h1
   width: 100vw;
   height: 200px;
   padding: 2em;
-  background-color: #FC9CB4;
+  background-color: #565454;
 }
 
 .footer-content h2 
@@ -263,5 +250,4 @@ h1
   font-size: 2em;
   color: black;
 }
-
 
