@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +10,18 @@ body
   font-family: 'Montserrat', sans-serif;
 }
 
+.vinculo{position: absolute; margin-top: 587px; width: 1365px;height:60px ; text-align:center; text-decoration: none;}
+
+a {color: black; font-size: 25px; text-decoration: none;}
+
+.ai {;position: absolute; color: black; margin-top: 280px; margin-left: 200px; font-family:'Montserrat', sans-serif; text-decoration: none;}
+
+.uncom {width: 648px; position: absolute; margin-left: 710px; margin-top: 10px}
+
+.un {position: absolute; color: black; margin-top: 280px; margin-left: 930px; font-family: 'Montserrat', sans-serif; text-decoration: none;}
+
+img {opacity: 50%; position: absolute; width: 700px;}
+
 .wrapper 
 {
   width: 100vw;
@@ -21,7 +32,7 @@ body
 
 .navbar 
 {
-  display: flex;
+  display: flex;  
   justify-content: space-between;
   padding: 2em;
 }
